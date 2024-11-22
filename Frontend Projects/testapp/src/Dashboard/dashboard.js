@@ -31,7 +31,7 @@ const Dashboard = () => {
     
     return (
         <>
-            <h1>Dashboard hello test</h1>
+            <h1>Dashboard hello</h1>
             <button className="btn btn-success" id="btn" onClick={getHelloFormServer}>get test Hello </button>
         </>
     );

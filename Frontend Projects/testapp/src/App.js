@@ -12,8 +12,8 @@ function App() {
      <Route path='/Register' element={<UserRegistration/>} ></Route> 
      <Route path='/ResendToken' element={<ResendToken/>}></Route>
      <Route path='/Dashboard' element={<Dashboard/>}></Route>
-     
     </Routes>
+    
   );
 }
 

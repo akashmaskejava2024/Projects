@@ -57,8 +57,6 @@ public class JWTServiceImpl implements JWTService{
 	public String generateJwtToken(String username) {
 		Map<String, Object> claims = new HashMap<String, Object>();
 		
-		
-		
 		return Jwts.builder()
 		 .claims(claims)
 		 .subject(username)

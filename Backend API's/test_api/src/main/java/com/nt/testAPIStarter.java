@@ -9,7 +9,6 @@ public class testAPIStarter {
 		
 		SpringApplication.run(testAPIStarter.class, args);
 		
-		
 	}
 
 }

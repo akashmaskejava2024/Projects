@@ -19,6 +19,7 @@ const Dashboard = () => {
                 return res.json();  // Parse the JSON response
             })
             .then(data => {
+
                 alert(data.message);
                 console.log(data);  // Handle the parsed JSON response here
             })

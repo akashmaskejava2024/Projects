@@ -1,5 +1,7 @@
 package com.nt.service;
 
+import javax.mail.MessagingException;
+
 import org.springframework.stereotype.Service;
 
 import com.nt.dto.UserRequestDTO;
@@ -13,7 +15,7 @@ public interface UserService {
 
 	boolean checkIfSameuser(UserRequestDTO dto);
 
-	boolean validateUser(UserRequestDTO dto);
+	String validateUser(UserRequestDTO dto);
 
 	void saveEmailverificationToken(User user, String token);
 
@@ -22,6 +24,9 @@ public interface UserService {
 
 
 	String resendVerificationMail(String email, String applicationURL);
+
+	void sendVerificationMail(String email, String uRL) throws MessagingException;
+
 
 	
 	

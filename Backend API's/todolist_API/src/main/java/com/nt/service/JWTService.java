@@ -12,4 +12,5 @@ public interface JWTService {
 
 	boolean validateToken(String token, UserDetails userDetails);
 
+	
 }

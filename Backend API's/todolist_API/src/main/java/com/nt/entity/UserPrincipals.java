@@ -16,9 +16,6 @@ public class UserPrincipals implements UserDetails{
 	public UserPrincipals(User user	) {
 		this.user = user;
 	}
-	
-	
-	
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -19,7 +19,6 @@ import org.springframework.security.config.annotation.rsocket.RSocketSecurity.Jw
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-import com.nt.entity.JWTValidationKey;
 import com.nt.entity.User;
 import com.nt.repository.UserRepository;
 import com.nt.service.JWTService;

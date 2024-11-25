@@ -14,8 +14,4 @@ public class APIResponse implements Serializable{
 
 	private Object data;
 	private String message;
-	
-	
-	
-	
 }

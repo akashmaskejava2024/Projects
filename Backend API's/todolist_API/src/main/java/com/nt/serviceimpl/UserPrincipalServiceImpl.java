@@ -26,7 +26,6 @@ public class UserPrincipalServiceImpl implements UserPrincipalService{
 		if(user == null) {
 			
 			throw new UsernameNotFoundException("User not Found");
-			
 		}
 		return new UserPrincipals(user);
 		

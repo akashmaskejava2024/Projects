@@ -38,7 +38,6 @@ public class JWTServiceImpl implements JWTService{
 		try {
 			keyGen = KeyGenerator.getInstance("HmacSHA256");
 			SecretKey sk = keyGen.generateKey();
-			
 			secretKey = Base64.getEncoder().encodeToString(sk.getEncoded());
 			// key is genereated into byte[] anf then string
 		} catch (NoSuchAlgorithmException e) {

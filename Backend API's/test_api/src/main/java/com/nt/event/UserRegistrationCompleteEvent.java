@@ -8,7 +8,6 @@ import com.nt.entity.User;
 
 public class UserRegistrationCompleteEvent  extends ApplicationEvent implements Serializable{
 
-    private static final long serialVersionUID = 1L; // Explicit serialVersionUID field
 
 	
 	private final User user;

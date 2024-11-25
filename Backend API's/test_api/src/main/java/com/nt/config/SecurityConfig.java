@@ -17,21 +17,18 @@ import com.nt.filter.JWTFilter;
 import com.nt.service.UserPrincipalService;
 
 @EnableWebSecurity
-public class SecurityConfig{
+public class SecurityConfig {
 
 	@Autowired
 	private JWTFilter jwtFilter;
-	
-	
-	  @Bean
-	    public PasswordEncoder passwordEncoder() {
-	        return new BCryptPasswordEncoder(); // Or another encoder of your choice
-	    }
-	
-	
+
+	@Bean
+	public PasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder(); // Or another encoder of your choice
+	}
+
 	@Autowired
 	private UserPrincipalService userPrincipalService;
-	
 
 	private static final String[] WHITE_LIST_URLS = { "/user", "/user/login", "/user/verifyRegistration",
 			"/user/resendVerificationlink" };
@@ -39,21 +36,13 @@ public class SecurityConfig{
 	@Bean
 	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-//		http.cors()
-//		.and()
-//		.csrf()
-//		.disable()
-//		.authorizeHttpRequests()
-//		.antMatchers(WHITE_LABEL_URLS)
-//		.permitAll()
-//	
 		return http.cors().and().csrf().disable().authorizeRequests().antMatchers(WHITE_LIST_URLS) // Using
 																									// antMatchers() for
 																									// URL patterns
 				.permitAll() // Allow public access to these URLs
 				.anyRequest().authenticated() // All other requests need to be authenticated
 				.and().addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class) // Add JWT filter before
-																								// the
+																								// //
 																								// UsernamePasswordAuthenticationFilter
 				.build();
 	}
@@ -71,11 +60,9 @@ public class SecurityConfig{
 //        return authenticationManagerBuilder.build();
 //	}
 
-	
 	@Bean
 	public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
 		return config.getAuthenticationManager();
 	}
-	 
-	
+
 }

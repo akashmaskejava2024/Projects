@@ -10,10 +10,11 @@ function App() {
     
 
     <Routes>
-      <Route path='/' element={<Login />}></Route>
+      {/* <Route path='/' element={<Login />}></Route> */}
        <Route path='/Register' element={<UserRegistration/>} ></Route> 
        <Route path='/ResendToken' element={<ResendToken/>}></Route>
-       <Route path='/Dashboard' element={<Dashboard/>}></Route>
+       {/* <Route path='/Dashboard' element={<Dashboard/>}></Route> */}
+       <Route path='/' element={<Dashboard/>}></Route>
       </Routes>
 
   );

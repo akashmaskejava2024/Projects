@@ -1,6 +1,10 @@
 package com.nt.entity;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -8,6 +12,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import org.eclipse.jdt.internal.compiler.ast.FalseLiteral;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,7 +31,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "list")
-public class List {
+public class TaskList {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -32,8 +40,11 @@ public class List {
 	private String list_name;
 	
 	@ManyToOne
-    @JoinColumn(name = "user_id") // Foreign key column referencing User
+    @JoinColumn(name = "user_id", nullable = false) // Foreign key column referencing User
     private User user;
 	
+	@OneToMany(mappedBy = "taskList", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+	@JsonManagedReference
+	private List<Task> task;
 
 }

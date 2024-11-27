@@ -2,7 +2,9 @@
 
 const initialState = {
   count: 0,
-  users:[],
+  user:{
+    lists:[]
+  },
   loggedinUser:{}
 };
 
@@ -10,7 +12,7 @@ const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     
     case 'AddUser':
-      return { ...state, users: [...state.users, action.payload]  };
+      return { ...state, lists: [...state.user, action.payload]  };
 
      case 'loggedinuser':
       return{ ...state, loggedinUser:action.payload} 

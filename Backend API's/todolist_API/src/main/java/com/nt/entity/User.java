@@ -1,15 +1,19 @@
 package com.nt.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -41,7 +45,8 @@ public class User {
 	
 	
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL) // Establishing the one-to-many relationship
-    private java.util.List<List> lists; // List of lists associated with the user
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER) // Establishing the one-to-many relationship
+    @JsonManagedReference
+    private List<TaskList> taskLists; // List of lists associated with the user
 
 }

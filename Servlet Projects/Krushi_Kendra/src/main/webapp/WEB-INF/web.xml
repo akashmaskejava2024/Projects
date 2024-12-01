@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Krushi_Kendra</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>Insert_Sevlet</servlet-name>\
+  <servlet-class>com.nt.Insert_Sevlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Insert_Sevlet</servlet-name>
+  <url-pattern>/Insert_Sevlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddSale_Servlet</servlet-name>\
+  <servlet-class>com.nt.AddSale_Servlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>AddSale_Servlet</servlet-name>
+  <url-pattern>/AddSale_Servlet</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+  <servlet-name>ReturnProduct_Servlet</servlet-name>\
+  <servlet-class>com.nt.ReturnProduct_Servlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ReturnProduct_Servlet</servlet-name>
+  <url-pattern>/ReturnProduct_Servlet</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>check_lessthan_stock</servlet-name>\
+  <servlet-class>com.nt.check_lessthan_stock</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>check_lessthan_stock</servlet-name>
+  <url-pattern>/check_lessthan_stock</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>check_stock_with_lessthan_price</servlet-name>\
+  <servlet-class>com.nt.check_stock_with_lessthan_price</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>check_stock_with_lessthan_price</servlet-name>
+  <url-pattern>/check_stock_with_lessthan_price</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>check_stock_with_greaterthan_price</servlet-name>\
+  <servlet-class>com.nt.check_stock_with_greaterthan_price</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>check_stock_with_greaterthan_price</servlet-name>
+  <url-pattern>/check_stock_with_greaterthan_price</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+  <servlet-name>check_stock_with_type</servlet-name>\
+  <servlet-class>com.nt.check_stock_with_type</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>check_stock_with_type</servlet-name>
+  <url-pattern>/check_stock_with_type</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+  <servlet-name>check_prod_with_letter</servlet-name>\
+  <servlet-class>com.nt.check_prod_with_letter</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>check_prod_with_letter</servlet-name>
+  <url-pattern>/check_prod_with_letter</url-pattern>
+  </servlet-mapping>
+
+
+
+</web-app>

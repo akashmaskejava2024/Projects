@@ -2,12 +2,13 @@ import { ErrorMessage, Field, Form, Formik } from 'formik';
 import './Login.css';
 import * as Yup from 'yup';
 import { Link, useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { validateLogin } from '../ActionCreator/UserActionCreator';
 
 export const Login = () => {
     const users = useSelector((state) => state.users);
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     return (
         <Formik
@@ -32,7 +33,7 @@ export const Login = () => {
                     .matches(/[\W_]/, "Password must contain at least one special character")
             })}
             onSubmit={(loginData) => {
-                validateLogin(navigate, loginData);
+                validateLogin(navigate, loginData, dispatch);
             }}
         >
             {({ errors, touched }) => (
@@ -65,7 +66,7 @@ export const Login = () => {
                             </div>
                             <div className="col-auto d-flex justify-content-between w-100">
                                 <Link to='/Register' className="btn btn-link">Sign up</Link>
-                                <Link to='/ResendToken' className="btn btn-link">Resend Token</Link>
+                                <Link to='/ResendToken' className="btn btn-link">Resend Email V.</Link>
 
                                 <button type='submit' className='btn btn-success'>Login</button>
                             </div>

@@ -1,7 +1,8 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { json, useNavigate } from "react-router";
 import { AddUserAction } from "../Action/action";
 import { Axios } from "axios";
+import { store } from "../store";
 
 export const getHelloFormServer = () => {
     const token = sessionStorage.getItem("token");
@@ -34,7 +35,7 @@ export const getHelloFormServer = () => {
 };
 
 
-export const validateLogin = (navigate, userData) => {
+export const validateLogin = (navigate, userData,dispatch) => {
 
     const URL = 'http://localhost:8080/user/login';
     fetch(URL, {
@@ -55,7 +56,29 @@ export const validateLogin = (navigate, userData) => {
             throw new Error("No token received from server!");
         }
         alert(data.message);
-        sessionStorage.setItem("token", data.data);
+        console.log(data.data);
+        
+        sessionStorage.setItem("token", data.data.token);
+        const normalizedTasklists = data.data.tasklists ? data.data.tasklists.map((list) => ({
+            ...list,
+            isListed: list.listed, // Change 'listed' to 'isListed'
+            tasks: list.tasks ? list.tasks.map((task) => ({
+                ...task,
+                isDone: task.done // Change 'done' to 'isDone'
+            })) : [] // Ensure that tasks is not undefined
+            
+        })) : [];
+
+        const user = { ...data.data, tasklists:normalizedTasklists };
+        console.log("from userActionCreator", user);  // This will log the user object
+        
+        
+    
+         dispatch(AddUserAction(user));
+
+         console.log("user from store", store.getState().user);  // This will log the user object properly
+         
+         
         navigate("/Dashboard");
     })
     .catch(error => {

@@ -47,6 +47,6 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER) // Establishing the one-to-many relationship
     @JsonManagedReference
-    private List<TaskList> taskLists; // List of lists associated with the user
+    private List<TaskList> tasklists; // List of lists associated with the user
 
 }

@@ -10,10 +10,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class ListRequestDTO {
+public class TaskListRequestDTO {
 
 	private int id;
-	private String list_name;
+	private String listname;
+	private boolean isListed;
 	private String username;
 	
 }

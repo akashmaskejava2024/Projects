@@ -174,4 +174,15 @@ public class UserServiceImpl implements UserService {
 		return "invalid_mail";
 	}
 
+	@Override
+	public UserResponseDTO getUserByUsername(String username) {
+
+		User user = repository.findByUsername(username);
+		UserResponseDTO dto = mapper.toResponseDTO(user);
+		
+		
+		
+		return dto;
+	}
+
 }

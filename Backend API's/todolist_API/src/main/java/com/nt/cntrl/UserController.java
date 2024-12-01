@@ -19,6 +19,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import com.nt.dto.APIResponse;
 import com.nt.dto.UserRequestDTO;
+import com.nt.dto.UserResponseDTO;
 import com.nt.entity.User;
 import com.nt.event.RegistrationCompleteEvent;
 import com.nt.mapper.UserMapper;
@@ -99,7 +100,9 @@ public class UserController {
 
 		if (!result.equalsIgnoreCase("Authentication_Error") && !result.equalsIgnoreCase("invalid_Credentials")){
 			if(!result.equalsIgnoreCase("Please_Verify_Emial_First")) {
-				return ResponseEntity.ok(new APIResponse(result, "User Login Success"));
+				UserResponseDTO user = service.getUserByUsername(dto.getUsername()); 
+				user.setToken(result);
+				return ResponseEntity.ok(new APIResponse(user, "User Login Success"));
 			} else {
 				return ResponseEntity.ok(new APIResponse(null, "Please Verify your Email first..."));
 	

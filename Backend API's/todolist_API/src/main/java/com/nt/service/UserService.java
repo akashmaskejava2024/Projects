@@ -27,6 +27,8 @@ public interface UserService {
 
 	void sendVerificationMail(String email, String uRL) throws MessagingException;
 
+	UserResponseDTO getUserByUsername(String username);
+
 
 	
 	

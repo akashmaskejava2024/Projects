@@ -15,6 +15,7 @@ import javax.persistence.Table;
 
 import org.eclipse.jdt.internal.compiler.ast.FalseLiteral;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import lombok.AllArgsConstructor;
@@ -37,14 +38,17 @@ public class TaskList {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	private String list_name;
+	private String listname;
+	private boolean isListed;
 	
 	@ManyToOne
-    @JoinColumn(name = "user_id", nullable = false) // Foreign key column referencing User
+    @JoinColumn(name = "user_id", nullable = false)
+	@JsonIgnore  // Foreign key column referencing User
     private User user;
 	
-	@OneToMany(mappedBy = "taskList", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "tasklist", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
 	@JsonManagedReference
-	private List<Task> task;
+	private List<Task> tasks;
+	
 
 }

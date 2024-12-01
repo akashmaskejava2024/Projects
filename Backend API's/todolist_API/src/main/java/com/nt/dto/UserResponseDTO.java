@@ -1,6 +1,9 @@
 package com.nt.dto;
 
 import java.time.LocalDate;
+import java.util.List;
+
+import com.nt.entity.TaskList;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,6 +27,8 @@ public class UserResponseDTO {
 	private long phone;
 	private String username;
 	private String msg;
-	
+	private String token;
+    private List<TaskList> tasklists;
+
 	
 }

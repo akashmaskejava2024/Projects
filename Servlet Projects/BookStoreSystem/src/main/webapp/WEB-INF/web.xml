@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>BookStoreSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.nt.Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.nt.Register</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminLogin</servlet-name>
+		<servlet-class>com.nt.AdminLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminLogin</servlet-name>
+		<url-pattern>/AdminLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Registerbook</servlet-name>
+		<servlet-class>com.nt.books.Registerbook</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Registerbook</servlet-name>
+		<url-pattern>/Registerbook</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RemoveBooks</servlet-name>
+		<servlet-class>com.nt.books.RemoveBooks</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoveBooks</servlet-name>
+		<url-pattern>/RemoveBooks</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminLogout</servlet-name>
+		<servlet-class>com.nt.AdminLogout</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminLogout</servlet-name>
+		<url-pattern>/AdminLogout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DisplayAllBooksList</servlet-name>
+		<servlet-class>com.nt.DisplayAllBooksList</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DisplayAllBooksList</servlet-name>
+		<url-pattern>/DisplayAllBooksList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddToCart</servlet-name>
+		<servlet-class>com.nt.AddToCart</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddToCart</servlet-name>
+		<url-pattern>/AddToCart</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.nt.Logout</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Orders</servlet-name>
+		<servlet-class>com.nt.Orders</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Orders</servlet-name>
+		<url-pattern>/Orders</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RemoveFromCart</servlet-name>
+		<servlet-class>com.nt.RemovefromCart</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoveFromCart</servlet-name>
+		<url-pattern>/RemoveFromCart</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>ConfirmOrders</servlet-name>
+		<servlet-class>com.nt.ConfirmOrders</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ConfirmOrders</servlet-name>
+		<url-pattern>/ConfirmOrders</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>MakePayment</servlet-name>
+		<servlet-class>com.nt.MakePayment</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MakePayment</servlet-name>
+		<url-pattern>/MakePayment</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>

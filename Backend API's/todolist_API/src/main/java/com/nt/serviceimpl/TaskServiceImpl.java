@@ -7,7 +7,6 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nt.dto.TaskListRequestDTO;
 import com.nt.dto.TaskRequestDTO;
 import com.nt.dto.TaskResponseDTO;
 import com.nt.entity.Task;

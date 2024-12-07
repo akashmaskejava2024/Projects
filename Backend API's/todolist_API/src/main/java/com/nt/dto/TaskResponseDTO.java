@@ -14,7 +14,6 @@ import net.bytebuddy.asm.Advice.Local;
 @NoArgsConstructor
 @AllArgsConstructor
 
-@Component
 public class TaskResponseDTO {
 
 	private int id;

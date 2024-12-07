@@ -1,14 +1,10 @@
 package com.nt.serviceimpl;
 
-import javax.websocket.server.ServerEndpoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.config.TaskManagementConfigUtils;
 import org.springframework.stereotype.Service;
 
 import com.nt.dto.TaskListRequestDTO;
-import com.nt.dto.UserResponseDTO;
-import com.nt.entity.Task;
 import com.nt.entity.TaskList;
 import com.nt.entity.User;
 import com.nt.mapper.TaskListMapper;

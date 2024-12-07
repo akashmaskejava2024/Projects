@@ -30,6 +30,7 @@ import lombok.Setter;
 @NoArgsConstructor
 
 
+
 @Entity
 @Table(name = "list")
 public class TaskList {

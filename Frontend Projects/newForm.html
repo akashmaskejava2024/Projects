@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sendEmail()">Send Email</button>
+
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:abmartofficial@gmail.com?subject=about%20leave%20letter&body=Hello%20sir/mam";
+        }
+    </script>    <form  id="form1" action="">
+
+        <input type="text" name="username" placeholder="Enter username" onchange="handleNameChange" />
+        <input type="number" name="contact" placeholder=" ENter numbver" onchange="handleContactChaneg" required/>
+        <input type="email" name="email" placeholder="ENter Email"/>
+
+        <input type="submit" value="SUbmit" onsubmit="handleSubnmit"/>
+    </form>
+
+
+    <script>
+        
+        var emp = {
+            name:"",
+            contact:"",
+            email:""
+        }
+
+        
+        function handleNameChange(e){
+
+            var name = e.target.value;
+
+            emp= {
+                ...emp,
+                name:name
+            }
+
+        }
+
+
+        function handleSubnmit(e){
+            e.preventDefault();
+
+
+
+
+
+
+        }
+
+    </script>
+
+</body>
+</html>

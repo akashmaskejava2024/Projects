@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- Enable Spring MVC Annotations -->
+    <mvc:annotation-driven />
+
+    <!-- Scan Controller, Service, and DAO packages -->
+    <context:component-scan base-package="com.collegemanagement" />
+
+    <!-- Database Configuration -->
+    <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />  <!-- Updated for MySQL 8+ -->
+        <property name="url" value="jdbc:mysql://localhost:3306/collegemanagementsystem?useSSL=false&amp;serverTimezone=UTC" />
+        <property name="username" value="root" />
+        <property name="password" value="root@123" />
+    </bean>
+
+
+<!-- Multipart Resolver for handling file uploads -->
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    <property name="maxUploadSize" value="5242880"/> <!-- 5MB limit -->
+</bean>
+    <!-- JdbcTemplate Bean -->
+    <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="ds" />
+    </bean>
+
+    <!-- View Resolver for JSP Files -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+    
+    <!-- Serve Static Files (CSS, JS, Images) -->
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+    
+
+</beans>

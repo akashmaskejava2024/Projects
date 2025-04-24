@@ -1,0 +1,63 @@
+"id";"name";"course_id";"semester";"active"
+1;"Data Structures";1;1;1
+2;"Digital Electronics";2;1;1
+3;"Thermodynamics";3;1;1
+4;"Engineering Mechanics";4;1;1
+5;"Programming in C";5;1;1
+6;"OOP with Java";6;2;1
+7;"Microprocessors";7;2;1
+8;"Fluid Mechanics";8;2;1
+9;"Surveying";9;2;1
+10;"Web Technologies";10;2;1
+11;"DBMS";11;3;1
+12;"Control Systems";12;3;1
+13;"Machine Design";13;3;1
+14;"Structural Analysis";14;3;1
+15;"Mobile Computing";15;3;1
+16;"Operating Systems";16;4;1
+17;"VLSI Design";17;4;1
+18;"Heat Transfer";18;4;1
+19;"Concrete Technology";19;4;1
+20;"Cloud Computing";20;4;1
+21;"Python Programming";1;1;1
+22;"Embedded Systems";2;1;1
+23;"CAD/CAM";3;1;1
+24;"Transportation Engineering";4;1;1
+25;"Computer Networks";5;1;1
+26;"Software Engineering";6;2;1
+27;"Analog Circuits";7;2;1
+28;"IC Engines";8;2;1
+29;"Environmental Engineering";9;2;1
+30;"Machine Learning";10;2;1
+31;"Advanced DBMS";11;3;1
+32;"Robotics";12;3;1
+33;"Manufacturing Process";13;3;1
+34;"Geotechnical Engineering";14;3;1
+35;"Cyber Security";15;3;1
+36;"Unix Systems";16;4;1
+37;"Signal Processing";17;4;1
+38;"Refrigeration & AC";18;4;1
+39;"Construction Planning";19;4;1
+40;"IoT";20;4;1
+41;"Discrete Mathematics";1;1;1
+42;"Network Theory";2;1;1
+43;"Engineering Graphics";3;1;1
+44;"Building Materials";4;1;1
+45;"JavaScript & DOM";5;1;1
+46;"qsasd`";36;1;1
+47;"qsasd`";36;1;1
+48;"qsasd`";36;1;1
+49;"qsasd`";36;1;1
+50;"qsasd`";36;1;1
+51;"ele";41;1;1
+52;"div";41;1;1
+53;"mult";41;1;1
+54;"add";41;2;1
+55;"sub";41;2;1
+56;"equal";41;2;1
+57;"qsasd`";38;1;1
+58;"qsasd`";38;1;1
+59;"qsasd`";38;1;1
+60;"qsasd`";38;1;1
+61;"qsasd`";38;1;1
+62;"qsasd`";38;1;1

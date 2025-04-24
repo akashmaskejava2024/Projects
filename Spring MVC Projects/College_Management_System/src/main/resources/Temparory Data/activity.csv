@@ -1,0 +1,32 @@
+"id";"student_id";"type";"subtype";"competition_level";"rank";"achievement";"image";"active"
+1;1;"Sports";"Cricket";"College";1;"Secured rank 1 in Cricket at College level";"cricket_1.jpg";1
+2;2;"Cultural";"Dancing";"State";2;"Secured rank 2 in Dancing at State level";"dancing_2.jpg";1
+3;3;"Other";"Tech Fest";"National";3;"Secured rank 3 in Tech Fest at National level";"tech_fest_3.jpg";1
+4;4;"Sports";"Kho-Kho";"College";2;"Secured rank 2 in Kho-Kho at College level";"kho_kho_4.jpg";1
+5;5;"Cultural";"Debate";"College";3;"Secured rank 3 in Debate at College level";"debate_5.jpg";1
+6;6;"Other";"Seminar";"State";1;"Secured rank 1 in Seminar at State level";"seminar_6.jpg";1
+7;7;"Sports";"Football";"State";1;"Secured rank 1 in Football at State level";"football_7.jpg";1
+8;8;"Cultural";"Singing";"National";2;"Secured rank 2 in Singing at National level";"singing_8.jpg";1
+9;9;"Other";"Hackathon";"College";3;"Secured rank 3 in Hackathon at College level";"hackathon_9.jpg";1
+10;10;"Sports";"Kabaddi";"National";2;"Secured rank 2 in Kabaddi at National level";"kabaddi_10.jpg";1
+11;11;"Cultural";"Drama";"College";1;"Secured rank 1 in Drama at College level";"drama_11.jpg";1
+12;12;"Other";"NCC";"State";3;"Secured rank 3 in NCC at State level";"ncc_12.jpg";1
+13;13;"Sports";"Badminton";"College";2;"Secured rank 2 in Badminton at College level";"badminton_13.jpg";1
+14;14;"Cultural";"Painting";"College";1;"Secured rank 1 in Painting at College level";"painting_14.jpg";1
+15;15;"Other";"NSS";"College";2;"Secured rank 2 in NSS at College level";"nss_15.jpg";1
+16;16;"Sports";"Cricket";"State";1;"Secured rank 1 in Cricket at State level";"cricket_16.jpg";1
+17;17;"Cultural";"Dancing";"College";3;"Secured rank 3 in Dancing at College level";"dancing_17.jpg";1
+18;18;"Other";"Tech Fest";"National";2;"Secured rank 2 in Tech Fest at National level";"tech_fest_18.jpg";1
+19;19;"Sports";"Kho-Kho";"National";1;"Secured rank 1 in Kho-Kho at National level";"kho_kho_19.jpg";1
+20;20;"Cultural";"Debate";"State";1;"Secured rank 1 in Debate at State level";"debate_20.jpg";1
+21;21;"Other";"Seminar";"College";1;"Secured rank 1 in Seminar at College level";"seminar_21.jpg";1
+22;22;"Sports";"Football";"College";3;"Secured rank 3 in Football at College level";"football_22.jpg";1
+23;23;"Cultural";"Singing";"State";2;"Secured rank 2 in Singing at State level";"singing_23.jpg";1
+24;24;"Other";"Hackathon";"National";2;"Secured rank 2 in Hackathon at National level";"hackathon_24.jpg";1
+25;25;"Sports";"Kabaddi";"State";3;"Secured rank 3 in Kabaddi at State level";"kabaddi_25.jpg";1
+26;26;"Cultural";"Drama";"National";1;"Secured rank 1 in Drama at National level";"drama_26.jpg";1
+27;27;"Other";"NCC";"College";1;"Secured rank 1 in NCC at College level";"ncc_27.jpg";1
+28;28;"Sports";"Badminton";"National";2;"Secured rank 2 in Badminton at National level";"badminton_28.jpg";1
+29;29;"Cultural";"Painting";"State";2;"Secured rank 2 in Painting at State level";"painting_29.jpg";1
+30;30;"Other";"NSS";"National";1;"Secured rank 1 in NSS at National level";"nss_30.jpg";1
+31;1;"Cultural";"Dance";"College";1;"asdf";"/uploads/1744440225422_20220422_203422.jpg";1

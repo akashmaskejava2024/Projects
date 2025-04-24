@@ -1,0 +1,27 @@
+"id";"name";"email";"password";"department";"active"
+1;"Dr. Asha Kulkarni";"asha.kulkarni@college.edu";"pass123";"Computer Science";1
+2;"Dr. Nitin Deshmukh";"nitin.deshmukh@college.edu";"pass123";"IT";1
+3;"Dr. Sneha Patil";"sneha.patil@college.edu";"pass123";"Electronics";1
+4;"Dr. Vivek Jadhav";"vivek.jadhav@college.edu";"pass123";"Mechanical";1
+5;"Dr. Meena Pawar";"meena.pawar@college.edu";"pass123";"Civil";1
+6;"Dr. Suresh Shinde";"suresh.shinde@college.edu";"pass123";"Mechanical";1
+7;"Dr. Priya Joshi";"priya.joshi@college.edu";"pass123";"Electronics";1
+8;"Dr. Ramesh Wagh";"ramesh.wagh@college.edu";"pass123";"Civil";1
+9;"Dr. Seema Naik";"seema.naik@college.edu";"pass123";"Computer Science";1
+10;"Dr. Amol Kale";"amol.kale@college.edu";"pass123";"IT";1
+11;"Dr. Swati Khot";"swati.khot@college.edu";"pass123";"Electronics";1
+12;"Dr. Harshal More";"harshal.more@college.edu";"pass123";"Mechanical";1
+13;"Dr. Vaishali Salunkhe";"vaishali.salunkhe@college.edu";"pass123";"IT";1
+14;"Dr. Deepak Jagtap";"deepak.jagtap@college.edu";"pass123";"Computer Science";1
+15;"Dr. Anita Chavan";"anita.chavan@college.edu";"pass123";"Civil";1
+16;"Dr. Rajesh Shirke";"rajesh.shirke@college.edu";"pass123";"Mechanical";1
+17;"Dr. Kavita Londhe";"kavita.londhe@college.edu";"pass123";"Computer Science";1
+18;"Dr. Yogesh Pawar";"yogesh.pawar@college.edu";"pass123";"IT";1
+19;"Dr. Sunita Gawade";"sunita.gawade@college.edu";"pass123";"Electronics";1
+20;"Dr. Sachin Mhatre";"sachin.mhatre@college.edu";"pass123";"Civil";1
+21;"Dr. Neha Thombre";"neha.thombre@college.edu";"pass123";"Mechanical";1
+22;"Dr. Kiran Shelar";"kiran.shelar@college.edu";"pass123";"Computer Science";1
+23;"Dr. Varsha Shirsat";"varsha.shirsat@college.edu";"pass123";"IT";1
+24;"Dr. Omkar Ingle";"omkar.ingle@college.edu";"pass123";"Electronics";1
+49;"Akash Maske";"akash@gmail.com";"a1";"";1
+50;"Kiran Sawant";"k@gmail.com";"k1";"";1
